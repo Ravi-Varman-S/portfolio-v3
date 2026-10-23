@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ravi Varman S — Software Developer | Python, React &amp; Node.js</title>
+  <meta name="description" content="Portfolio of Ravi Varman S — B.E. CSE 2026 fresher software developer. Python, Java, React, Node.js. Shipped 4 public projects and 3 internships. Resume download inside." />
+  <meta name="author" content="Ravi Varman S" />
+  <meta name="theme-color" content="#05070c" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ravi Varman S — Software Developer" />
+  <meta property="og:description" content="Python, React & Node.js. 4 public projects, 3 internships, zero notice period. Resume downloadable." />
+  <meta property="og:url" content="https://ravi-varman-s.github.io/portfolio-v3/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Ravi Varman S — Software Developer" />
+  <meta name="twitter:description" content="Python, React & Node.js. 4 public projects, 3 internships, zero notice period." />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2305070c'/%3E%3Ctext x='50' y='67' font-family='monospace' font-size='46' font-weight='700' fill='%2322d3ee' text-anchor='middle'%3ERV%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js");</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ravi Varman S",
+    "jobTitle": "Software Developer",
+    "email": "mailto:ravivarmansenthilkumar@gmail.com",
+    "telephone": "+91-80561-99077",
+    "url": "https://ravi-varman-s.github.io/portfolio-v3/",
+    "alumniOf": "MRK Institute of Technology",
+    "knowsAbout": ["Python", "Java", "JavaScript", "React", "Node.js", "REST APIs", "MongoDB", "MySQL", "Playwright"],
+    "sameAs": ["https://github.com/Ravi-Varman-S", "https://www.linkedin.com/in/ravi-varman-s-ab70a1397"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__box">
+      <span class="preloader__mono">ravi@portfolio:~$</span>
+      <span class="preloader__text" id="preloaderText"></span><span class="preloader__caret"></span>
+      <div class="preloader__bar"><i></i></div>
+    </div>
+  </div>
+
+  <!-- ============ CURSOR ============ -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- ============ SCROLL PROGRESS ============ -->
+  <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#top" data-magnet>
+      <span class="nav__mark">RV</span>
+      <span class="nav__name">Ravi Varman S</span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#journey">Journey</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn--ghost btn--sm nav__cta" href="resume.pdf" download="Ravi_Varman_S_Resume.pdf" data-resume>
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Resume
+    </a>
+    <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="starfield" aria-hidden="true"></canvas>
+      <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+
+      <div class="hero__inner">
+        <p class="eyebrow" data-reveal>
+          <span class="pulse"></span> Available for opportunities — immediate joiner · zero notice period
+        </p>
+
+        <h1 class="hero__title" aria-label="Ravi Varman S">
+          <span class="hero__line"><span class="kinetic" data-kinetic>RAVI</span></span>
+          <span class="hero__line"><span class="kinetic" data-kinetic>VARMAN</span><span class="kinetic kinetic--accent" data-kinetic>S</span></span>
+        </h1>
+
+        <p class="hero__role" data-reveal>
+          <span class="hero__role-static">&gt;&nbsp;</span><span id="roleRotator">Software Developer</span><span class="hero__caret"></span>
+        </p>
+
+        <p class="hero__copy" data-reveal>
+          B.E. CSE 2026 graduate who ships real software — Python automation,
+          React &amp; Node.js web apps and AI-integrated tools. Four public projects,
+          three internships, and code you can read before you hire me.
+        </p>
+
+        <div class="hero__cta" data-reveal>
+          <a class="btn btn--primary" href="resume.pdf" download="Ravi_Varman_S_Resume.pdf" data-magnet data-resume>
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download resume
+          </a>
+          <a class="btn btn--ghost" href="#work" data-magnet>
+            See my work
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+        <dl class="hero__stats" data-reveal>
+          <div class="stat"><dt data-count="7.9" data-decimals="1">0</dt><dd>CGPA / 10</dd></div>
+          <div class="stat"><dt data-count="4">0</dt><dd>Public projects</dd></div>
+          <div class="stat"><dt data-count="3">0</dt><dd>Internships</dd></div>
+          <div class="stat"><dt data-count="0">0</dt><dd>Notice period</dd></div>
+        </dl>
+      </div>
+
+      <a class="hero__scroll" href="#about" aria-label="Scroll down">
+        <span class="hero__mouse"><i></i></span>
+        <span>scroll</span>
+      </a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marqueeTrack">
+        <span>Python</span><i>✦</i><span>Java</span><i>✦</i><span>JavaScript</span><i>✦</i><span>React</span><i>✦</i>
+        <span>Node.js</span><i>✦</i><span>Express</span><i>✦</i><span>REST APIs</span><i>✦</i><span>MongoDB</span><i>✦</i>
+        <span>MySQL</span><i>✦</i><span>Playwright</span><i>✦</i><span>FastAPI</span><i>✦</i><span>Git</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <p class="kicker" data-reveal>// about</p>
+        <h2 class="section__title" data-reveal>Engineer who builds, ships &amp; documents</h2>
+
+        <div class="about">
+          <div class="about__text panel" data-reveal>
+            <p>
+              I'm <strong>Ravi Varman S</strong>, a Computer Science engineer
+              (B.E. 2026, CGPA 7.9/10) from Tamil Nadu, India. I've been writing
+              Python for over a year — building full-stack products, automation
+              tooling and AI-flavoured side projects.
+            </p>
+            <p>
+              I've shipped a facial-recognition door lock, a job platform for
+              low-tech users, an accident-risk predictor and a full audio-forensics
+              web app with its own signal-processing engine. I care about code that
+              another developer can read six months later.
+            </p>
+            <p class="about__punch">
+              I work best on tasks with a clear outcome, I communicate in plain
+              language, and I can start today.
+            </p>
+          </div>
+
+          <ul class="about__facts">
+            <li class="fact" data-reveal style="--d:.05s"><span class="fact__k">📍 Location</span><span class="fact__v">Cuddalore, Tamil Nadu, India</span></li>
+            <li class="fact" data-reveal style="--d:.1s"><span class="fact__k">🎓 Education</span><span class="fact__v">B.E. CSE · MRK Institute of Technology · 2026</span></li>
+            <li class="fact" data-reveal style="--d:.15s"><span class="fact__k">🕘 Availability</span><span class="fact__v">Immediate · remote &amp; onsite</span></li>
+            <li class="fact" data-reveal style="--d:.2s"><span class="fact__k">🗣 Languages</span><span class="fact__v">Tamil · English</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS (orbit) ============ -->
+    <section class="section section--tight" id="skills">
+      <div class="wrap">
+        <p class="kicker" data-reveal>// toolkit</p>
+        <h2 class="section__title" data-reveal>My skills, in orbit</h2>
+        <p class="section__sub" data-reveal>Hover the orbit to pause it and inspect any skill.</p>
+
+        <div class="orbit" id="orbit" data-reveal aria-label="Animated skill orbit">
+          <div class="orbit__core">
+            <span>RV</span>
+            <small>1yr+&nbsp;coding</small>
+          </div>
+          <!-- rings injected by script.js -->
+        </div>
+
+        <div class="skillgrid">
+          <div class="skillcard panel" data-reveal style="--d:.05s">
+            <h3>Languages</h3>
+            <p>Python · Java · JavaScript (ES6+) · C · SQL</p>
+          </div>
+          <div class="skillcard panel" data-reveal style="--d:.1s">
+            <h3>Frontend</h3>
+            <p>React · HTML5 · CSS3 · Responsive &amp; accessible UI</p>
+          </div>
+          <div class="skillcard panel" data-reveal style="--d:.15s">
+            <h3>Backend &amp; Data</h3>
+            <p>Node.js · Express · REST APIs · MongoDB · MySQL</p>
+          </div>
+          <div class="skillcard panel" data-reveal style="--d:.2s">
+            <h3>Testing &amp; Tools</h3>
+            <p>Playwright · Git/GitHub · Postman · VS Code · UiPath</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <p class="kicker" data-reveal>// selected work</p>
+        <h2 class="section__title" data-reveal>Four projects, all public</h2>
+        <p class="section__sub" data-reveal>Real builds with source code you can read before you shortlist me.</p>
+
+        <div class="projects">
+
+          <article class="project" data-reveal data-tilt>
+            <div class="project__viz viz-wave" aria-hidden="true">
+              <div class="viz-wave__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <span class="viz-wave__label">detect → label → spectrogram</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tagline">Flagship · Python · AI · Web</span>
+              <h3>What Happened Here? 2.0</h3>
+              <p>
+                Feed it a 2–3 minute recording and it tells you what happened and when —
+                a labelled spectrogram, a timing table, and loudness curves that justify
+                every boundary. Hand-written energy detector with hysteresis, YAMNet
+                labelling across 521 AudioSet classes, streamed SSE progress, and
+                in-browser mic recording.
+              </p>
+              <ul class="chips"><li>Python</li><li>FastAPI</li><li>YAMNet</li><li>SSE</li><li>Vanilla JS</li></ul>
+              <a class="project__link" href="https://github.com/Ravi-Varman-S/what-happened-here" target="_blank" rel="noopener">
+                Source <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project" data-reveal data-tilt style="--d:.08s">
+            <div class="project__viz viz-code" aria-hidden="true">
+<pre>const app = express();
+app.use(cors());
+app.post('/apply', async (req, res) =&gt; {
+  await db.save(req.body);
+  return res.json({ ok: true });
+});</pre>
+              <span class="viz-code__cursor"></span>
+            </div>
+            <div class="project__body">
+              <span class="project__tagline">Social impact · Full-stack</span>
+              <h3>Zero Barrier</h3>
+              <p>
+                A job application platform built for low-tech workers — bridging the
+                digital divide in employment. Deliberately simple flows, minimal typing,
+                and a database layer that keeps applications reliable on flaky connections.
+              </p>
+              <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>MySQL</li></ul>
+              <a class="project__link" href="https://github.com/Ravi-Varman-S/Zero-Barrier" target="_blank" rel="noopener">
+                Source <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project" data-reveal data-tilt style="--d:.16s">
+            <div class="project__viz viz-face" aria-hidden="true">
+              <div class="viz-face__scan"><i></i></div>
+              <span class="viz-face__label"><b></b> face matched · unlock</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tagline">IoT · Computer vision</span>
+              <h3>Smart Door Lock</h3>
+              <p>
+                Real-time door unlocking using facial biometrics — combining IoT
+                hardware with a Python recognition pipeline for secure access control.
+                Camera capture, match, actuate: end to end.
+              </p>
+              <ul class="chips"><li>Python</li><li>IoT</li><li>Computer Vision</li></ul>
+              <a class="project__link" href="https://github.com/Ravi-Varman-S/Smart-Door-Lock" target="_blank" rel="noopener">
+                Source <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project" data-reveal data-tilt style="--d:.24s">
+            <div class="project__viz viz-map" aria-hidden="true">
+              <span class="viz-map__formula">risk = f(history, geometry, traffic)</span>
+              <div class="viz-map__dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="project__body">
+              <span class="project__tagline">Data · AI / GIS</span>
+              <h3>Blackspot Prediction</h3>
+              <p>
+                Accident-blackspot prediction using AI and GIS data to flag high-risk
+                road segments — turning raw incident history into a ranked map that
+                authorities can actually act on.
+              </p>
+              <ul class="chips"><li>Python</li><li>AI/ML</li><li>GIS</li></ul>
+              <a class="project__link" href="https://github.com/Ravi-Varman-S/Blackspot-Prediction" target="_blank" rel="noopener">
+                Source <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ JOURNEY (scroll-drawn timeline) ============ -->
+    <section class="section section--tight" id="journey">
+      <div class="wrap">
+        <p class="kicker" data-reveal>// journey</p>
+        <h2 class="section__title" data-reveal>The path so far</h2>
+
+        <div class="timeline" id="timeline">
+          <svg class="timeline__svg" viewBox="0 0 4 1000" preserveAspectRatio="none" aria-hidden="true">
+            <line class="timeline__track" x1="2" y1="0" x2="2" y2="1000" />
+            <line class="timeline__fill" id="timelineFill" x1="2" y1="0" x2="2" y2="1000" />
+          </svg>
+
+          <ol class="timeline__list">
+            <li class="tl" data-reveal>
+              <span class="tl__dot"></span>
+              <div class="tl__card panel">
+                <span class="tl__date">2026</span>
+                <h3>B.E. Computer Science &amp; Engineering</h3>
+                <p>MRK Institute of Technology · CGPA 7.9 / 10</p>
+              </div>
+            </li>
+            <li class="tl tl--alt" data-reveal>
+              <span class="tl__dot"></span>
+              <div class="tl__card panel">
+                <span class="tl__date">Aug – Sep 2025</span>
+                <h3>RPA Intern · Infosys Foundation CSR IT Training</h3>
+                <p>Built UiPath workflows and bots that automated repetitive office tasks; verified process logic end to end.</p>
+              </div>
+            </li>
+            <li class="tl" data-reveal>
+              <span class="tl__dot"></span>
+              <div class="tl__card panel">
+                <span class="tl__date">Jul 2025</span>
+                <h3>Full Stack Development Intern · HCLTech</h3>
+                <p>Java full-stack development, web application features and database integration during hands-on training.</p>
+              </div>
+            </li>
+            <li class="tl tl--alt" data-reveal>
+              <span class="tl__dot"></span>
+              <div class="tl__card panel">
+                <span class="tl__date">Feb 2025</span>
+                <h3>App Development Intern · Scode Software Solutions</h3>
+                <p>Implemented mobile UI features and debugged screens across devices.</p>
+              </div>
+            </li>
+            <li class="tl" data-reveal>
+              <span class="tl__dot"></span>
+              <div class="tl__card panel">
+                <span class="tl__date">2022</span>
+                <h3>HSC (XII) · CK School of PKMS</h3>
+                <p>72.7%</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESUME ============ -->
+    <section class="section" id="resume">
+      <div class="wrap">
+        <p class="kicker" data-reveal>// resume</p>
+        <h2 class="section__title" data-reveal>Take it with you</h2>
+
+        <div class="resume" data-reveal>
+          <div class="resume__preview panel" aria-hidden="true">
+            <div class="resume__sheet">
+              <div class="resume__head">
+                <span class="resume__name">RAVI VARMAN S</span>
+                <span class="resume__role">Software Developer — Fresher</span>
+                <span class="resume__meta">ravivarmansenthilkumar@gmail.com · +91 80561 99077</span>
+              </div>
+              <div class="resume__lines">
+                <i style="--w:96%"></i><i style="--w:88%"></i><i style="--w:92%"></i>
+                <i class="resume__sec" style="--w:34%"></i>
+                <i style="--w:90%"></i><i style="--w:78%"></i>
+                <i class="resume__sec" style="--w:28%"></i>
+                <i style="--w:94%"></i><i style="--w:85%"></i><i style="--w:60%"></i>
+              </div>
+              <span class="resume__badge">PDF · 1 page</span>
+            </div>
+          </div>
+
+          <div class="resume__side">
+            <h3>Ravi_Varman_S_Resume.pdf</h3>
+            <p>
+              Software Developer version — summary, skills, projects, internships and
+              education on a single page. Updated October 2026.
+            </p>
+            <ul class="resume__points">
+              <li>Role-tailored for software developer positions</li>
+              <li>Links to every public project on GitHub</li>
+              <li>Immediate joiner · remote or onsite</li>
+            </ul>
+            <div class="resume__actions">
+              <a class="btn btn--primary" href="resume.pdf" download="Ravi_Varman_S_Resume.pdf" data-magnet data-resume>
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download PDF
+              </a>
+              <a class="btn btn--ghost" href="resume.pdf" target="_blank" rel="noopener" data-magnet>
+                View in browser
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section--tight" id="faq">
+      <div class="wrap wrap--narrow">
+        <p class="kicker" data-reveal>// faq</p>
+        <h2 class="section__title" data-reveal>Before you ask</h2>
+
+        <div class="faq" data-reveal>
+          <details class="faq__item">
+            <summary>Which stack do you work with?<span class="faq__chev" aria-hidden="true"></span></summary>
+            <p>Python and Java on the language side, React + Node.js/Express for web apps, MongoDB/MySQL for data, and Playwright for end-to-end testing. I also build AI-integrated features — YAMNet audio classification and facial-biometrics pipelines in real projects.</p>
+          </details>
+          <details class="faq__item">
+            <summary>How soon can you start?<span class="faq__chev" aria-hidden="true"></span></summary>
+            <p>Immediately — zero notice period. I'm available for remote work worldwide and open to onsite roles.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Can I see your code before deciding?<span class="faq__chev" aria-hidden="true"></span></summary>
+            <p>Yes. Every project on this page links to its public GitHub repository — read the code, the README and the commit history. That's the point of showing it.</p>
+          </details>
+          <details class="faq__item">
+            <summary>How do we start a conversation?<span class="faq__chev" aria-hidden="true"></span></summary>
+            <p>Email or LinkedIn — details below. Send the role or task in a sentence or two and I'll reply with relevant work and honest availability.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <p class="kicker" data-reveal>// contact</p>
+        <h2 class="section__title" data-reveal>Let's build something</h2>
+        <p class="section__sub" data-reveal>I reply to every message. Fastest route: email.</p>
+
+        <div class="contact">
+          <button class="cc" id="copyEmail" data-reveal data-magnet type="button">
+            <span class="cc__icon">✉</span>
+            <span class="cc__k">Email <em>(click to copy)</em></span>
+            <span class="cc__v">ravivarmansenthilkumar@gmail.com</span>
+          </button>
+          <a class="cc" href="tel:+918056199077" data-reveal style="--d:.06s" data-magnet>
+            <span class="cc__icon">📞</span>
+            <span class="cc__k">Phone</span>
+            <span class="cc__v">+91 80561 99077</span>
+          </a>
+          <a class="cc" href="https://github.com/Ravi-Varman-S" target="_blank" rel="noopener" data-reveal style="--d:.12s" data-magnet>
+            <span class="cc__icon">💻</span>
+            <span class="cc__k">GitHub</span>
+            <span class="cc__v">github.com/Ravi-Varman-S</span>
+          </a>
+          <a class="cc" href="https://www.linkedin.com/in/ravi-varman-s-ab70a1397" target="_blank" rel="noopener" data-reveal style="--d:.18s" data-magnet>
+            <span class="cc__icon">💼</span>
+            <span class="cc__k">LinkedIn</span>
+            <span class="cc__v">in/ravi-varman-s</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>© <span id="year">2026</span> Ravi Varman S — built with hand-written HTML, CSS &amp; JavaScript.</p>
+      <a class="footer__top" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ TOAST ============ -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
